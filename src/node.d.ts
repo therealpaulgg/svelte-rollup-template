@@ -1,0 +1,3 @@
+interface ImportModule {
+    env: any
+}

@@ -8,12 +8,13 @@ module.exports = {
                 preprocess: true
             }
         ],
-        "^.+\\.ts$": "ts-jest",
-        "^.+\\.js$": "babel-jest"
+        "^.+\\.(js|ts)$": "ts-jest"
     },
     moduleFileExtensions: ["js", "ts", "svelte"],
     setupFilesAfterEnv: ["./jestSetup.ts"],
-    transformIgnorePatterns: ["node_modules/(?!(svelte-typewriter|svelte-flatpickr)/)"],
+    transformIgnorePatterns: [
+        "node_modules/(?!(svelte-typewriter|svelte-flatpickr)/)"
+    ],
     moduleNameMapper: {
         "\\.(css|less|scss)$": "identity-obj-proxy"
     },

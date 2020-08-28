@@ -6,6 +6,7 @@
     import Navbar from "./components/Navbar.svelte"
     import NavbarLink from "./components/NavbarLink.svelte"
     import { onMount } from "svelte"
+    import DatePicker from "./components/DatePicker.svelte"
     let collapsed = false
 </script>
 
@@ -22,6 +23,7 @@
 <div id="app">
     <Sidebar {collapsed}>
         <h1>Hello There</h1>
+        <DatePicker />
     </Sidebar>
 
     <div id="main" style="margin-left: {collapsed ? 0 : 450}px">
